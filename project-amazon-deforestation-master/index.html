@@ -1,0 +1,60 @@
+<!-- Index HTML file for Amazon Deforestation Project
+Luke Abbatessa, Jenny Cai, Jocelyn Ju, Varun McIntyre
+DS4200 || Prof. Mosca
+Last Modified: 04.18.2023 -->
+
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- Link stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Include D3 library in head -->
+    <script src="js/d3.v6.1.1/d3.min.js"></script>
+
+    <!-- Add a title -->
+    <title>Amazon Deforestation</title>
+</head>
+
+
+<body>
+    <!-- Add the bird that shows the user which page they are on in the menu bar -->
+    <img src="imgs/bird.png" alt="bird" id="bird-viz">
+    
+    <!-- Add the header and navigation bar -->
+    <h1>Deforestation in the Amazon</h1>
+    <div class="navbar">
+        <a href="motiv.html">Motivation & Background</a>
+        <a href="index.html">Visualizations</a>
+        <a href="sources.html">Acknowledgements</a>
+    </div>
+
+    <!-- Add divs for the visual encodings -->
+    <div>
+        <h2 class="center">Visualizations</h2>
+
+        <!-- Create a div for Visual Encoding 1, the histogram + line plot -->
+        <div id="vis-enc-1" align="center"></div>  
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-left">
+
+            <!-- Create a div for the first visualization of Visual Encoding 2, the dot plot -->
+            <div id="vis-enc-2" align="center"></div>
+        </div>
+        <div class="flex-right">
+
+           <!-- Create a div for the second visualization of Visual Encoding 2, the pie chart -->
+           <div id="vis-enc-3" align="center"></div>
+        </div>
+    </div>
+
+    <!-- Include js at end of body -->
+    <script src="js/main.js"></script> 
+</body>
+
+</html>

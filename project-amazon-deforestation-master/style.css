@@ -1,0 +1,198 @@
+/* CSS file for Amazon Deforestation Project
+Luke Abbatessa, Jenny Cai, Jocelyn Ju, Varun McIntyre
+DS4200 || Prof. Mosca
+Last Modified: 04.18.2023 
+*/
+
+/* Set font of page to Arial and the background color to a light green */
+body {
+    font-family: Arial;
+    background-color: #E6FFCC;
+}
+
+/* Align all header-1s to the center */
+h1 {
+    text-align: center;
+}
+
+/* Add styling for navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: darkgreen;
+    font-family: Arial;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: ghostwhite;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Create a class to center items */
+.center {
+    text-align: center;
+}
+
+/* Add styling to highlight an object */
+.highlight {
+    stroke: lightseagreen;
+    stroke-width: 3px;
+}
+
+/* Add a class to style the bars of the histogram */
+.bar {
+    fill: rosybrown;
+    stroke: saddlebrown;
+    stroke-width: 3px;
+}
+
+/* Add styling for the tooltip */
+.pt-tooltip {
+    opacity: 0;
+    background-color: green;
+    border: solid;
+    border-width: 2px;
+    border-radius: 7px;
+    padding: 3px;
+    position: absolute;
+    color: ghostwhite;
+}
+
+/* Add styling for the points */
+.point {
+    fill: green;
+    opacity: 1;
+}
+
+.pt {
+    stroke: brown;
+    stroke-width: 2;
+}
+
+/* Style the plots */
+.axis-text {
+    font-size: 10px;
+}
+
+.xlab {
+    text-anchor: middle;
+}
+
+.title {
+    text-anchor: middle;
+    text-align: center;
+    font-size: 22px;
+}
+
+/* Add a border around the dot plot */
+.border {
+    stroke: black;
+    stroke-width: 5px;
+    fill: none;
+}
+
+/* Add positioning for the bird */
+#bird-motiv {
+    width: 5%;
+    height: 8%;
+    position: absolute;
+    top: 40px;
+    left: 70px;
+}
+
+#bird-viz {
+    width: 5%;
+    height: 8%;
+    position: absolute;
+    top: 40px;
+    left: 240px;
+}
+
+#bird-src {
+    width: 5%;
+    height: 8%;
+    position: absolute;
+    top: 40px;
+    left: 390px;
+}
+
+/* Add the line for the line plot */
+.line {
+    fill: none;
+    stroke: black;
+    stroke-width: 2px;
+}
+
+/* Add styling for the pie chart */
+.slices {
+    stroke: black;
+    stroke-width: 2px;
+    opacity: 0.7;
+}
+
+.slice-labs {
+    text-anchor: middle;
+    font-size: 17px;
+}
+
+.sq-labs {
+    text-anchor: left;
+    text-align: center;
+    font-size: 11px;
+    fill: black;
+}
+
+/* Fill the point/bar of Visual Encoding 1 with brown if selected */
+.selected {
+    fill: #4A0404;
+    stroke: #00FF00;
+    opacity: 1;
+}
+
+/* Create a flex container to make two columns */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Adjust the left column */
+.flex-left {
+    width: 50%;
+    flex-wrap: flex;
+    flex-direction: column;
+}
+
+/* Adjust the right column */
+.flex-right {
+    flex-direction: column;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+/* Adjust the text of the left column */
+.flex-left-text {
+    width: 45%;
+    flex-wrap: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+/* Adjust the text of the right column */
+.flex-right-text {
+    flex-direction: column;
+    width: 45%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+/* Highlight the slice of the histogram on click */
+.highlight-slice {
+    stroke: lime;
+    stroke-width: 5px;
+}
